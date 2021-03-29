@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    background-color: brown;
+    color: white;
+}
+
+header nav ul{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+header nav ul li{
+    display: inline;
+    margin-left: 20px;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: brown;
+
+}
+
+main p{
+    width: 35%;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 40px;
+    margin-left: 500px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 100px;
+}
