@@ -36,6 +36,55 @@ main p{
     margin-left: 500px;
 }
 
+main div span{
+    font-size: 40px;
+}
+
+main div ol{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+main div ol li{
+    margin-top: 10px;
+}
+
+#education{
+    padding: 30px;
+}
+
+#work-experience{
+    padding: 30px;
+}
+
+#education span{
+    font-size: 25px;
+    color: brown;
+    margin-left: 40px;
+}
+
+#work-experience span{
+    font-size: 25px;
+    color: brown;
+    margin-left: 40px;
+}
+
+#education ul li{
+    padding: 10px;
+}
+
+#work-experience ul li{
+    padding: 10px;
+}
+
+#top10movies {
+    margin: 30px;
+}
+
+#top10movies span{
+    color: brown;
+}
+
 footer{
     text-align: center;
     margin-top: 100px;
