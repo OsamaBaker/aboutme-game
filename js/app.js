@@ -25,38 +25,26 @@ function q1(){
 }
 q1();
 
-let colorRed = prompt("Do I like the color red?")
-
-colorRed = colorRed.toLowerCase();
-
-if (colorRed === 'yes' || colorRed ==='y') {
-    // console.log("You like red!");
-    alert("Correct, I like red!");
-    score++;
-} else if (colorRed === 'no' || colorRed === 'n'){
-    // console.log("You don't like red");
-    alert("Incorrect, I do like red");
-} else{
-    // console.log("You should answer with yes/no or y/n");
-    alert("You should answer with yes/no or y/n");
-}
 
 // Second question
-let iceCream = prompt("Do I like Ice Cream?")
+function q2 (){
+    let iceCream = prompt("Do I like Ice Cream?")
 
-iceCream = iceCream.toLowerCase();
-
-if (iceCream === 'yes' || iceCream === 'y'){
-    // console.log("You like Ice Cream!");
-    alert("Correct, I like Ice Cream!");
-    score++;
-} else if (iceCream === 'no' || iceCream === 'n'){
-    // console.log("You don't like Ice Cream!");
-    alert("Incorrect, I do like Ice Cream!");
-} else{
-    // console.log("You should answer with yes/no or y/n");
-    alert("You should answer with yes/no or y/n");
+    iceCream = iceCream.toLowerCase();
+    
+    if (iceCream === 'yes' || iceCream === 'y'){
+        // console.log("You like Ice Cream!");
+        alert("Correct, I like Ice Cream!");
+        score++;
+    } else if (iceCream === 'no' || iceCream === 'n'){
+        // console.log("You don't like Ice Cream!");
+        alert("Incorrect, I do like Ice Cream!");
+    } else{
+        // console.log("You should answer with yes/no or y/n");
+        alert("You should answer with yes/no or y/n");
+    }
 }
+q2();
 
 // Third question
 let chocolate = prompt("Do I like Chocolate?")
