@@ -5,8 +5,26 @@ let userName = prompt("What is you name?")
 alert("Hello, " + userName + " Welcome to my site!")
 
 alert(userName + ", You should answer the following questions with: yes/no or y/n")
-
 // First question
+function q1(){
+    let colorRed = prompt("Do I like the color red?")
+
+    colorRed = colorRed.toLowerCase();
+    
+    if (colorRed === 'yes' || colorRed ==='y') {
+        // console.log("You like red!");
+        alert("Correct, I like red!");
+        score++;
+    } else if (colorRed === 'no' || colorRed === 'n'){
+        // console.log("You don't like red");
+        alert("Incorrect, I do like red");
+    } else{
+        // console.log("You should answer with yes/no or y/n");
+        alert("You should answer with yes/no or y/n");
+    }
+}
+q1();
+
 let colorRed = prompt("Do I like the color red?")
 
 colorRed = colorRed.toLowerCase();
