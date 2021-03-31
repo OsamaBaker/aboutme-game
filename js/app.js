@@ -1,124 +1,129 @@
 'use strict';
 let score = 0;
-// let userName = prompt("What is you name?")
+let userName = prompt("What is you name?")
 
-// alert("Hello, " + userName + " Welcome to my site!")
+alert("Hello, " + userName + " Welcome to my site!")
 
-// alert(userName + ", You should answer the following questions with: yes/no or y/n")
+alert(userName + ", You should answer the following questions with: yes/no or y/n")
 
-// // First question
-// let colorRed = prompt("Do I like the color red?")
+// First question
+let colorRed = prompt("Do I like the color red?")
 
-// colorRed = colorRed.toLowerCase();
+colorRed = colorRed.toLowerCase();
 
-// if (colorRed === 'yes' || colorRed ==='y') {
-//     // console.log("You like red!");
-//     alert("Correct, I like red!");
-// } else if (colorRed === 'no' || colorRed === 'n'){
-//     // console.log("You don't like red");
-//     alert("Incorrect, I do like red");
-// } else{
-//     // console.log("You should answer with yes/no or y/n");
-//     alert("You should answer with yes/no or y/n");
-// }
+if (colorRed === 'yes' || colorRed ==='y') {
+    // console.log("You like red!");
+    alert("Correct, I like red!");
+    score++;
+} else if (colorRed === 'no' || colorRed === 'n'){
+    // console.log("You don't like red");
+    alert("Incorrect, I do like red");
+} else{
+    // console.log("You should answer with yes/no or y/n");
+    alert("You should answer with yes/no or y/n");
+}
 
-// // Second question
-// let iceCream = prompt("Do I like Ice Cream?")
+// Second question
+let iceCream = prompt("Do I like Ice Cream?")
 
-// iceCream = iceCream.toLowerCase();
+iceCream = iceCream.toLowerCase();
 
-// if (iceCream === 'yes' || iceCream === 'y'){
-//     // console.log("You like Ice Cream!");
-//     alert("Correct, I like Ice Cream!");
-// } else if (iceCream === 'no' || iceCream === 'n'){
-//     // console.log("You don't like Ice Cream!");
-//     alert("Incorrect, I do like Ice Cream!");
-// } else{
-//     // console.log("You should answer with yes/no or y/n");
-//     alert("You should answer with yes/no or y/n");
-// }
+if (iceCream === 'yes' || iceCream === 'y'){
+    // console.log("You like Ice Cream!");
+    alert("Correct, I like Ice Cream!");
+    score++;
+} else if (iceCream === 'no' || iceCream === 'n'){
+    // console.log("You don't like Ice Cream!");
+    alert("Incorrect, I do like Ice Cream!");
+} else{
+    // console.log("You should answer with yes/no or y/n");
+    alert("You should answer with yes/no or y/n");
+}
 
-// // Third question
-// let chocolate = prompt("Do I like Chocolate?")
+// Third question
+let chocolate = prompt("Do I like Chocolate?")
 
-// chocolate = chocolate.toLowerCase();
+chocolate = chocolate.toLowerCase();
 
-// if (chocolate === 'yes' || chocolate === 'y'){
-//     // console.log("You like Chocolate!");
-//     alert("Correct, I do like Chocolate!");
-// } else if (chocolate === 'no' || chocolate === 'n'){
-//     // console.log("You don't like Chocolate!");
-//     alert("Incorrect, I do like Chocolate!");
-// } else{
-//     // console.log("You should answer with yes/no or y/n");
-//     alert("You should answer with yes/no or y/n");
-// }
+if (chocolate === 'yes' || chocolate === 'y'){
+    // console.log("You like Chocolate!");
+    alert("Correct, I do like Chocolate!");
+    score++;
+} else if (chocolate === 'no' || chocolate === 'n'){
+    // console.log("You don't like Chocolate!");
+    alert("Incorrect, I do like Chocolate!");
+} else{
+    // console.log("You should answer with yes/no or y/n");
+    alert("You should answer with yes/no or y/n");
+}
 
-// // Fourth question
-// let jordan = prompt("Do I like Jordan?")
+// Fourth question
+let jordan = prompt("Do I like Jordan?")
 
-// jordan = jordan.toLowerCase();
+jordan = jordan.toLowerCase();
 
-// if (jordan === 'yes' || jordan === 'y'){
-//     // console.log("You like Jordan!");
-//     alert("Correct, I do like Jordan!");
-// } else if (jordan === 'no' || jordan === 'n'){
-//     // console.log("You don't like Jordan!");
-//     alert("Incorrect, I do like Jordan!");
-// } else{
-//     // console.log("You should answer with yes/no or y/n");
-//     alert("You should answer with yes/no or y/n");
-// }
+if (jordan === 'yes' || jordan === 'y'){
+    // console.log("You like Jordan!");
+    alert("Correct, I do like Jordan!");
+    score++;
+} else if (jordan === 'no' || jordan === 'n'){
+    // console.log("You don't like Jordan!");
+    alert("Incorrect, I do like Jordan!");
+} else{
+    // console.log("You should answer with yes/no or y/n");
+    alert("You should answer with yes/no or y/n");
+}
 
-// // Fifth question
-// let travel = prompt("Do I like to travel?")
+// Fifth question
+let travel = prompt("Do I like to travel?")
 
-// travel = travel.toLowerCase();
+travel = travel.toLowerCase();
 
-// if (travel === 'yes' || travel === 'y'){
-//     // console.log("You like to travel!");
-//     alert("Incorrect, I don't like travelling!");
-// } else if (travel === 'no' || travel === 'n'){
-//     // console.log("You don't like to travel!");
-//     alert("Correct, I don't like to travel!");
-// } else{
-//     // console.log("You should answer with yes/no or y/n");
-//     alert("You should answer with yes/no or y/n");
-// }
+if (travel === 'yes' || travel === 'y'){
+    // console.log("You like to travel!");
+    alert("Incorrect, I don't like travelling!");
+} else if (travel === 'no' || travel === 'n'){
+    // console.log("You don't like to travel!");
+    alert("Correct, I don't like to travel!");
+    score++;
+} else{
+    // console.log("You should answer with yes/no or y/n");
+    alert("You should answer with yes/no or y/n");
+}
 
-// // Sixth Question
-// alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
+// Sixth Question
+alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
 
-// let guessNumber = null;
+let guessNumber = null;
 
 
-// for(let i=0; i<4; i++){
-//     guessNumber=prompt("Guess A Number..");
-//     guessNumber = parseInt(guessNumber);
+for(let i=0; i<4; i++){
+    guessNumber=prompt("Guess A Number..");
+    guessNumber = parseInt(guessNumber);
 
-//     if (guessNumber >= 5 && guessNumber < 7) {
-//         alert('you are low but close')
-//     }
-//     else if (guessNumber <= 9 && guessNumber > 7) {
-//         alert('you are high but close')
-//     }
-//     else if (guessNumber < 7) {
-//         alert("Too Low");
-//     } else if (guessNumber > 7){
-//         alert("Too High");
-//     }else if(guessNumber===7){
-//         alert("correct, the number is 7")
-//         score++;
-//         break;
-//     }else{
-//         alert('wrong try again')
-//     }
-//     // i=3
-//     if (i===3) {
-//         alert('the correct answer is 7')
-//     }
+    if (guessNumber >= 5 && guessNumber < 7) {
+        alert('you are low but close')
+    }
+    else if (guessNumber <= 9 && guessNumber > 7) {
+        alert('you are high but close')
+    }
+    else if (guessNumber < 7) {
+        alert("Too Low");
+    } else if (guessNumber > 7){
+        alert("Too High");
+    }else if(guessNumber===7){
+        alert("correct, the number is 7")
+        score++;
+        break;
+    }else{
+        alert('wrong try again')
+    }
+    // i=3
+    if (i===3) {
+        alert('the correct answer is 7')
+    }
 
-// }
+}
 
 
 // Seventh Question
@@ -148,10 +153,6 @@ hasAttempts:while (attempts) {
 if (!attempts) {
     alert('sorry you ran out of tries , here are the answers '+ correctAnswers);
 }
-
-
-
-
 
 
 
