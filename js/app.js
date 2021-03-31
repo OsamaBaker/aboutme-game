@@ -1,5 +1,5 @@
 'use strict';
-
+let score = 0;
 // let userName = prompt("What is you name?")
 
 // alert("Hello, " + userName + " Welcome to my site!")
@@ -89,39 +89,128 @@
 // // Sixth Question
 // alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
 
-// let guessNumber = prompt("Guess A Number..");
-// guessNumber = parseInt(guessNumber);
+// let guessNumber = null;
+
 
 // for(let i=0; i<4; i++){
-//     if (guessNumber < 7) {
-//         guessNumber = prompt("Too Low");
+//     guessNumber=prompt("Guess A Number..");
+//     guessNumber = parseInt(guessNumber);
+
+//     if (guessNumber >= 5 && guessNumber < 7) {
+//         alert('you are low but close')
+//     }
+//     else if (guessNumber <= 9 && guessNumber > 7) {
+//         alert('you are high but close')
+//     }
+//     else if (guessNumber < 7) {
+//         alert("Too Low");
 //     } else if (guessNumber > 7){
-//         guessNumber = prompt("Too High");
+//         alert("Too High");
 //     }else if(guessNumber===7){
 //         alert("correct, the number is 7")
+//         score++;
 //         break;
-//     } else{
-//         alert("The number is 7");
-// }
+//     }else{
+//         alert('wrong try again')
+//     }
+//     // i=3
+//     if (i===3) {
+//         alert('the correct answer is 7')
+//     }
+
 // }
 
 
 // Seventh Question
-let rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
 
-let correctAnswer = ['red', 'blue', 'green', 'yellow', 'orange', 'indigo', 'violet'];
+let rainbow = null;
+
+let correctAnswers = ['red', 'blue', 'green', 'yellow', 'orange', 'indigo', 'violet'];
 
 let attempts = 6;
 
-for (let i = 0; i < attempts; i++) {
-    if(rainbow === correctAnswer[i]){
-        alert("Correct");
-        break;
-    } 
-    
-    
+hasAttempts:while (attempts) {
+    rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
+    // attempts-=1;
+    attempts = attempts - 1;
+    for (let i = 0; i < correctAnswers.length; i++) {
+        // console.log(correctAnswers[i]);  
+        // correctAnswers[0] =>red;
+        // correctAnswers[1] => blue;
+        if (rainbow === correctAnswers[i]) {
+            alert("Correct here are the answers " + correctAnswers);
+            break hasAttempts;
+        }
+    }
+    alert('sorry wrong answer');
 }
 
+if (!attempts) {
+    alert('sorry you ran out of tries , here are the answers '+ correctAnswers);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// solved with for loop:
+
+// for (let j=0; j<attempts;j++){
+//     console.log(j);
+//     rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
+//     for (let i = 0; i < correctAnswers.length; i++) {
+//         // console.log(correctAnswers[i]);  
+//         // correctAnswers[0] =>red;
+//         // correctAnswers[1] => blue;
+//         if(rainbow === correctAnswers[i] ){
+//             alert("Correct here are the answers "+ correctAnswers);
+//             j=6;
+//             // break;
+//         }
+//     }
+//     // j=5
+//     if (j==5) {
+//         alert('sorry no more tries '+correctAnswers);
+//     }else if(j<6){
+//         alert('this is wrong');
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for (let i = 0; i < 5; i++) {
+//     // i=0
+//     console.log('inside first loop',i);
+//     for (let j = 0; j <10; j++) {
+//         console.log('inside second loop',j);
+
+//     }
+// }
 
 
 
