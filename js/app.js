@@ -89,21 +89,24 @@ q4();
 
 
 // Fifth question
-let travel = prompt("Do I like to travel?")
+function q5(){
+    let travel = prompt("Do I like to travel?")
 
-travel = travel.toLowerCase();
-
-if (travel === 'yes' || travel === 'y'){
-    // console.log("You like to travel!");
-    alert("Incorrect, I don't like travelling!");
-} else if (travel === 'no' || travel === 'n'){
-    // console.log("You don't like to travel!");
-    alert("Correct, I don't like to travel!");
-    score++;
-} else{
-    // console.log("You should answer with yes/no or y/n");
-    alert("You should answer with yes/no or y/n");
+    travel = travel.toLowerCase();
+    
+    if (travel === 'yes' || travel === 'y'){
+        // console.log("You like to travel!");
+        alert("Incorrect, I don't like travelling!");
+    } else if (travel === 'no' || travel === 'n'){
+        // console.log("You don't like to travel!");
+        alert("Correct, I don't like to travel!");
+        score++;
+    } else{
+        // console.log("You should answer with yes/no or y/n");
+        alert("You should answer with yes/no or y/n");
+    }
 }
+q5();
 
 // Sixth Question
 alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
