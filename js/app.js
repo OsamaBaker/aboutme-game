@@ -109,38 +109,41 @@ function q5(){
 q5();
 
 // Sixth Question
-alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
+function q6(){
+    alert("I want to you guess a number between 1 and 10 \n You have 4 attempts to try");
 
-let guessNumber = null;
-
-
-for(let i=0; i<4; i++){
-    guessNumber=prompt("Guess A Number..");
-    guessNumber = parseInt(guessNumber);
-
-    if (guessNumber >= 5 && guessNumber < 7) {
-        alert('you are low but close')
+    let guessNumber = null;
+    
+    
+    for(let i=0; i<4; i++){
+        guessNumber=prompt("Guess A Number..");
+        guessNumber = parseInt(guessNumber);
+    
+        if (guessNumber >= 5 && guessNumber < 7) {
+            alert('you are low but close')
+        }
+        else if (guessNumber <= 9 && guessNumber > 7) {
+            alert('you are high but close')
+        }
+        else if (guessNumber < 7) {
+            alert("Too Low");
+        } else if (guessNumber > 7){
+            alert("Too High");
+        }else if(guessNumber===7){
+            alert("correct, the number is 7")
+            score++;
+            break;
+        }else{
+            alert('wrong try again')
+        }
+        // i=3
+        if (i===3) {
+            alert('the correct answer is 7')
+        }
+    
     }
-    else if (guessNumber <= 9 && guessNumber > 7) {
-        alert('you are high but close')
-    }
-    else if (guessNumber < 7) {
-        alert("Too Low");
-    } else if (guessNumber > 7){
-        alert("Too High");
-    }else if(guessNumber===7){
-        alert("correct, the number is 7")
-        score++;
-        break;
-    }else{
-        alert('wrong try again')
-    }
-    // i=3
-    if (i===3) {
-        alert('the correct answer is 7')
-    }
-
 }
+q6();
 
 
 // Seventh Question
