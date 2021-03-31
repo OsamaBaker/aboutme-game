@@ -147,32 +147,34 @@ q6();
 
 
 // Seventh Question
+function q7(){
+    let rainbow = null;
 
-let rainbow = null;
-
-let correctAnswers = ['red', 'blue', 'green', 'yellow', 'orange', 'indigo', 'violet'];
-
-let attempts = 6;
-
-hasAttempts:while (attempts) {
-    rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
-    // attempts-=1;
-    attempts = attempts - 1;
-    for (let i = 0; i < correctAnswers.length; i++) {
-        // console.log(correctAnswers[i]);  
-        // correctAnswers[0] =>red;
-        // correctAnswers[1] => blue;
-        if (rainbow === correctAnswers[i]) {
-            alert("Correct here are the answers " + correctAnswers);
-            break hasAttempts;
+    let correctAnswers = ['red', 'blue', 'green', 'yellow', 'orange', 'indigo', 'violet'];
+    
+    let attempts = 6;
+    
+    hasAttempts:while (attempts) {
+        rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
+        // attempts-=1;
+        attempts = attempts - 1;
+        for (let i = 0; i < correctAnswers.length; i++) {
+            // console.log(correctAnswers[i]);  
+            // correctAnswers[0] =>red;
+            // correctAnswers[1] => blue;
+            if (rainbow === correctAnswers[i]) {
+                alert("Correct here are the answers " + correctAnswers);
+                break hasAttempts;
+            }
         }
+        alert('sorry wrong answer');
     }
-    alert('sorry wrong answer');
+    
+    if (!attempts) {
+        alert('sorry you ran out of tries , here are the answers '+ correctAnswers);
+    }
 }
-
-if (!attempts) {
-    alert('sorry you ran out of tries , here are the answers '+ correctAnswers);
-}
+q7();
 
 
 
