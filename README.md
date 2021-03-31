@@ -7,3 +7,7 @@ I have created this website using HTML, CSS and Javascript. It is a short quiz m
 I have added the sixth question but couldn't complete the seventh question. I have learned about nested loops and have used the foor loop in detail.
 
 Author: Osama Baker
+
+- **The Navigator** : Osama Baker
+
+- **The Driver** : Layana Baba
