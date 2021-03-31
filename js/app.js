@@ -47,21 +47,25 @@ function q2 (){
 q2();
 
 // Third question
-let chocolate = prompt("Do I like Chocolate?")
 
-chocolate = chocolate.toLowerCase();
+function q3(){
+    let chocolate = prompt("Do I like Chocolate?")
 
-if (chocolate === 'yes' || chocolate === 'y'){
-    // console.log("You like Chocolate!");
-    alert("Correct, I do like Chocolate!");
-    score++;
-} else if (chocolate === 'no' || chocolate === 'n'){
-    // console.log("You don't like Chocolate!");
-    alert("Incorrect, I do like Chocolate!");
-} else{
-    // console.log("You should answer with yes/no or y/n");
-    alert("You should answer with yes/no or y/n");
+    chocolate = chocolate.toLowerCase();
+    
+    if (chocolate === 'yes' || chocolate === 'y'){
+        // console.log("You like Chocolate!");
+        alert("Correct, I do like Chocolate!");
+        score++;
+    } else if (chocolate === 'no' || chocolate === 'n'){
+        // console.log("You don't like Chocolate!");
+        alert("Incorrect, I do like Chocolate!");
+    } else{
+        // console.log("You should answer with yes/no or y/n");
+        alert("You should answer with yes/no or y/n");
+    }
 }
+q3();
 
 // Fourth question
 let jordan = prompt("Do I like Jordan?")
