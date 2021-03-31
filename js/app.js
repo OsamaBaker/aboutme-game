@@ -68,21 +68,25 @@ function q3(){
 q3();
 
 // Fourth question
-let jordan = prompt("Do I like Jordan?")
+function q4(){
+    let jordan = prompt("Do I like Jordan?")
 
-jordan = jordan.toLowerCase();
-
-if (jordan === 'yes' || jordan === 'y'){
-    // console.log("You like Jordan!");
-    alert("Correct, I do like Jordan!");
-    score++;
-} else if (jordan === 'no' || jordan === 'n'){
-    // console.log("You don't like Jordan!");
-    alert("Incorrect, I do like Jordan!");
-} else{
-    // console.log("You should answer with yes/no or y/n");
-    alert("You should answer with yes/no or y/n");
+    jordan = jordan.toLowerCase();
+    
+    if (jordan === 'yes' || jordan === 'y'){
+        // console.log("You like Jordan!");
+        alert("Correct, I do like Jordan!");
+        score++;
+    } else if (jordan === 'no' || jordan === 'n'){
+        // console.log("You don't like Jordan!");
+        alert("Incorrect, I do like Jordan!");
+    } else{
+        // console.log("You should answer with yes/no or y/n");
+        alert("You should answer with yes/no or y/n");
+    }
 }
+q4();
+
 
 // Fifth question
 let travel = prompt("Do I like to travel?")
