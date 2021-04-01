@@ -12,14 +12,11 @@ function q1(){
     colorRed = colorRed.toLowerCase();
     
     if (colorRed === 'yes' || colorRed ==='y') {
-        // console.log("You like red!");
         alert("Correct, I like red!");
         score++;
     } else if (colorRed === 'no' || colorRed === 'n'){
-        // console.log("You don't like red");
         alert("Incorrect, I do like red");
     } else{
-        // console.log("You should answer with yes/no or y/n");
         alert("You should answer with yes/no or y/n");
     }
 }
@@ -33,14 +30,11 @@ function q2 (){
     iceCream = iceCream.toLowerCase();
     
     if (iceCream === 'yes' || iceCream === 'y'){
-        // console.log("You like Ice Cream!");
         alert("Correct, I like Ice Cream!");
         score++;
     } else if (iceCream === 'no' || iceCream === 'n'){
-        // console.log("You don't like Ice Cream!");
         alert("Incorrect, I do like Ice Cream!");
     } else{
-        // console.log("You should answer with yes/no or y/n");
         alert("You should answer with yes/no or y/n");
     }
 }
@@ -54,14 +48,11 @@ function q3(){
     chocolate = chocolate.toLowerCase();
     
     if (chocolate === 'yes' || chocolate === 'y'){
-        // console.log("You like Chocolate!");
         alert("Correct, I do like Chocolate!");
         score++;
     } else if (chocolate === 'no' || chocolate === 'n'){
-        // console.log("You don't like Chocolate!");
         alert("Incorrect, I do like Chocolate!");
     } else{
-        // console.log("You should answer with yes/no or y/n");
         alert("You should answer with yes/no or y/n");
     }
 }
@@ -74,14 +65,11 @@ function q4(){
     jordan = jordan.toLowerCase();
     
     if (jordan === 'yes' || jordan === 'y'){
-        // console.log("You like Jordan!");
         alert("Correct, I do like Jordan!");
         score++;
     } else if (jordan === 'no' || jordan === 'n'){
-        // console.log("You don't like Jordan!");
         alert("Incorrect, I do like Jordan!");
     } else{
-        // console.log("You should answer with yes/no or y/n");
         alert("You should answer with yes/no or y/n");
     }
 }
@@ -95,14 +83,11 @@ function q5(){
     travel = travel.toLowerCase();
     
     if (travel === 'yes' || travel === 'y'){
-        // console.log("You like to travel!");
         alert("Incorrect, I don't like travelling!");
     } else if (travel === 'no' || travel === 'n'){
-        // console.log("You don't like to travel!");
         alert("Correct, I don't like to travel!");
         score++;
     } else{
-        // console.log("You should answer with yes/no or y/n");
         alert("You should answer with yes/no or y/n");
     }
 }
@@ -136,7 +121,6 @@ function q6(){
         }else{
             alert('wrong try again')
         }
-        // i=3
         if (i===3) {
             alert('the correct answer is 7')
         }
@@ -156,12 +140,9 @@ function q7(){
     
     hasAttempts:while (attempts) {
         rainbow = prompt("What is one color of a rainbow? \n You have 6 attempts.");
-        // attempts-=1;
         attempts = attempts - 1;
         for (let i = 0; i < correctAnswers.length; i++) {
-            // console.log(correctAnswers[i]);  
-            // correctAnswers[0] =>red;
-            // correctAnswers[1] => blue;
+
             if (rainbow === correctAnswers[i]) {
                 alert("Correct here are the answers " + correctAnswers);
                 break hasAttempts;
@@ -170,10 +151,13 @@ function q7(){
         alert('sorry wrong answer');
     }
     
+    
     if (!attempts) {
         alert('sorry you ran out of tries , here are the answers '+ correctAnswers);
     }
 }
+
+alert(`You got ${score} out of 7.`)
 q7();
 
 
